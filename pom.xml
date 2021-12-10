@@ -15,6 +15,14 @@
     </parent>
 
     <dependencies>
+        <!-- spring boot auto restart
+        (설정, 클래스가 바뀌면 auto restart) -->
+        <!-- 스프링부트에서는 소스코드가 바뀌어도 자동으로 서버가 재시작하지 않기 때문에 이 구문을 추가해서 자동으로 재시작하게 해준다. -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -24,6 +32,10 @@
             <artifactId>lombok</artifactId>
             <version>1.18.18</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
         </dependency>
     </dependencies>
 
