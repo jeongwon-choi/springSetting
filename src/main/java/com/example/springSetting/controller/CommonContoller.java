@@ -1,11 +1,12 @@
-package com.example.springSetting.common.controller;
+package com.example.springSetting.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+
 @Controller
 public class CommonContoller {
     @RequestMapping(value = "/")
-    public String Home(){
+    public String Home() throws Exception{
         return "index";
     }
 }

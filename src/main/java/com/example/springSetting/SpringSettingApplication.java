@@ -8,8 +8,8 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
-@ComponentScan(basePackages = {"com.example.*"})
-public class SpringSettingApplication {
+@ComponentScan(basePackages = {"com.*"})
+public class SpringSettingApplication{
     public static void main(String[] args) {
         SpringApplication.run(SpringSettingApplication.class, args);
     }
